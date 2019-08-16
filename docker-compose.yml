@@ -1,0 +1,8 @@
+version: '2'
+services:
+  myApp:
+    image: maven:3-alpine
+    build:
+      args:
+        '-v /root/.m2:/root/.m2'
+    container_name: my-app
